@@ -1,0 +1,521 @@
+{
+
+  "Routes": [
+    //user_project_one api config
+    {
+      "DownstreamPathTemplate": "/api/user/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "59536"
+        }
+      ],
+      "UpstreamPathTemplate": "/user/register",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/userlogin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "59536"
+        }
+      ],
+      "UpstreamPathTemplate": "/user/userlogin",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/UpdateUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "59536"
+        }
+      ],
+      "UpstreamPathTemplate": "/user/UpdateUser",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/DeleteUser/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "59536"
+        }
+      ],
+      "UpstreamPathTemplate": "/user/DeleteUser/{id}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "59536"
+        }
+      ],
+      "UpstreamPathTemplate": "/user/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "59536"
+        }
+      ],
+      "UpstreamPathTemplate": "/user",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    //Airline_project_two api congig
+    {
+      "DownstreamPathTemplate": "/api/Airline/Adminlogin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45688"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/Adminlogin",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Airline/DeleteAirline/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45688"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/DeleteAirline/{id}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Airline/updateAirline",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "block": null,
+          "Port": "45688"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/updateAirline",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Airline/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45688"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/register",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Airline/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45688"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Airline",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45688"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+
+    //flight microservice
+    {
+      "DownstreamPathTemplate": "/api/Flight/Adminlogin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/Adminlogin",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight/GetFlightByAirlineId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/GetFlightByAirlineId",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight/BlockFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/BlockFlight",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight/UnBlockFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/UnBlockFlight",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight/DeleteFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/DeleteFlight",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight/updateFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/updateFlight",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight/Add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/Add",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Flight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Flight",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Discount/DeleteDiscount",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Discount/DeleteDiscount",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Discount/updateDiscount",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Discount/updateDiscount",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Discount/AddDiscount",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Discount/AddDiscount",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Discount",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Discount",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Discount/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "63650"
+        }
+      ],
+      "UpstreamPathTemplate": "/Discount/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+    //BookandSearch microservice
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/adminLogin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/adminLogin",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/TicketCancel",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/TicketCancel",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/GetBookingHistory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/GetBookingHistory",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/SearchRoundWay",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/SearchRoundWay",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/{id}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/SearchOneWay",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/SearchOneWay",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/BookFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/BookFlight",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/BookandSearch/SearchPNR",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "45233"
+        }
+      ],
+      "UpstreamPathTemplate": "/BookandSearch/SearchPNR",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "GlobalConfiguration": {
+        "RequestIdKey": "OcRequestId",
+        "AdministrationPath": "/administration"
+      }
+    }
+  ] 
+}
